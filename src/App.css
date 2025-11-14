@@ -1,0 +1,203 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: radial-gradient(circle at top, #e6f0ff, #f9fafb 40%, #f3f4ff);
+}
+
+/* Two-column shell */
+.app {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 16px;
+  background: #fdfdff;
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 1fr;
+    margin: 12px;
+  }
+}
+
+.left-pane,
+.right-pane {
+  padding: 16px 20px 20px;
+}
+
+/* Left pane heading / badge */
+.badge {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(123, 156, 255, 0.12);
+  color: #4f46e5;
+  font-size: 12px;
+}
+
+h1 {
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-size: 24px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  max-width: 30rem;
+}
+
+/* Form */
+.vent-form {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  gap: 8px;
+}
+
+.hint {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+textarea {
+  min-height: 120px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+textarea:focus {
+  outline: 2px solid rgba(79, 70, 229, 0.25);
+  border-color: #6366f1;
+}
+
+/* Form footer */
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.char-count {
+  color: #9ca3af;
+}
+
+/* Buttons */
+.btn-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.primary-btn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #f9fafb;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(79, 70, 229, 0.4);
+}
+
+.primary-btn:hover {
+  filter: brightness(1.05);
+}
+
+.ghost-btn {
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: rgba(248, 250, 252, 0.9);
+  padding: 7px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #4b5563;
+}
+
+/* Status text */
+.status {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #059669;
+}
+
+/* Right pane: feed */
+.feed-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.feed-subtitle {
+  margin: 4px 0 10px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.feed {
+  background: rgba(248, 250, 252, 0.9);
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  max-height: 480px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.empty-feed {
+  font-size: 13px;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px 8px;
+}
+
+/* Message cards */
+.message-card {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.06);
+}
+
+.message-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+.author {
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.time {
+  white-space: nowrap;
+}
+
+.message-body {
+  margin: 0;
+  white-space: pre-wrap;
+}
