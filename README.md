@@ -3,7 +3,7 @@
 
 A calming, anonymous space for users — especially international students — to safely express their thoughts, worries, and emotions.
 
-Live Demo: **(add your Vercel link here)**
+Live Demo: https://vent-space-three.vercel.app/
 Tech Stack: React (Vite), CSS, LocalStorage
 
 ---
