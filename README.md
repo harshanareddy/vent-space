@@ -1,16 +1,116 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌿 Emotional Vent Space
 
-Currently, two official plugins are available:
+A calming, anonymous space for users — especially international students — to safely express their thoughts, worries, and emotions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live Demo: **(add your Vercel link here)**
+Tech Stack: React (Vite), CSS, LocalStorage
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌸 Overview
 
-## Expanding the ESLint configuration
+This project was built as part of the **Muhe Health Support Group Full Stack Web Developer** assessment.
+The goal was to design a safe, inclusive space where users can anonymously share what's on their mind, view others' vent messages, and feel supported.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The experience is intentionally minimal, soothing, and easy to use — focusing on emotional safety and UX clarity.
+
+---
+
+## ✨ Features
+
+### 💬 Anonymous Venting Form
+
+* No login, no identity — users can express themselves freely.
+* Live character count (max 500).
+* “I don’t know what to say” prompt button to help start a message.
+
+### 🧵 Live Message Feed
+
+* Displays latest messages instantly (newest on top).
+* Shows timestamps (“Today • 10:42 AM”).
+* Clean, calming UI inspired by mental wellness apps.
+
+### 🛡 Basic Moderation
+
+* Blocks harmful or abusive phrases.
+* Gently asks users to express feelings safely.
+
+### 💾 Persistent Storage
+
+* Uses **localStorage** so messages remain after page refresh.
+
+### 🎨 UI & UX
+
+* Soft layout, pastel gradient background
+* Rounded message cards
+* Smooth spacing and shadows
+* Balanced two-panel design (left = form, right = live feed)
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend:**
+
+* React (Vite)
+* CSS (custom)
+* Hooks: `useState`, `useEffect`
+* LocalStorage API
+
+**Other:**
+
+* Responsive layout
+* Accessible form labels
+* Icon support for page branding
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── App.jsx
+ ├── App.css
+ ├── assets/
+ │    └── heart-logo.png
+ └── main.jsx
+public/
+ └── index.html
+```
+
+---
+
+## 🚀 Running Locally
+
+```bash
+npm install
+npm run dev
+```
+
+App will open at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🧪 Future Enhancements (optional ideas)
+
+* Keyword-based emotional tags (“homesick”, “exam stress”)
+* Emoji reactions
+* Animated transitions
+* Backend storage (MongoDB / Firebase)
+* Anonymous reply threads
+* Basic sentiment detection
+
+---
+
+## 🙋‍♀️ Author
+
+**Harshana Reddy Gillala**
+Full Stack Developer & CS Graduate Student
+GitHub: [https://github.com/harshanareddy](https://github.com/harshanareddy)
+
+
